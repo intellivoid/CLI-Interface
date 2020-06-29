@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Intellivoid.cli</RootNamespace>
     <AssemblyName>Intellivoid.cli</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -31,17 +32,63 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Net.Http" />
-    <Reference Include="System.Xml" />
+    <Compile Include="ConsoleDrivers\CursesDriver\binding.cs" />
+    <Compile Include="ConsoleDrivers\CursesDriver\constants.cs" />
+    <Compile Include="ConsoleDrivers\CursesDriver\CursesDriver.cs" />
+    <Compile Include="ConsoleDrivers\CursesDriver\handles.cs" />
+    <Compile Include="ConsoleDrivers\CursesDriver\UnixMainLoop.cs" />
+    <Compile Include="ConsoleDrivers\CursesDriver\UnmanagedLibrary.cs" />
+    <Compile Include="ConsoleDrivers\FakeDriver\FakeConsole.cs" />
+    <Compile Include="ConsoleDrivers\FakeDriver\FakeDriver.cs" />
+    <Compile Include="ConsoleDrivers\NetDriver.cs" />
+    <Compile Include="ConsoleDrivers\WindowsDriver.cs" />
+    <Compile Include="Core\Application.cs" />
+    <Compile Include="Core\ConsoleDriver.cs" />
+    <Compile Include="Core\Event.cs" />
+    <Compile Include="Core\MainLoop.cs" />
+    <Compile Include="Core\PosDim.cs" />
+    <Compile Include="Core\Responder.cs" />
+    <Compile Include="Core\TextFormatter.cs" />
+    <Compile Include="Core\Toplevel.cs" />
+    <Compile Include="Core\View.cs" />
+    <Compile Include="Core\Window.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\Point.cs" />
+    <Compile Include="Types\Rect.cs" />
+    <Compile Include="Types\Size.cs" />
+    <Compile Include="Views\Button.cs" />
+    <Compile Include="Views\Checkbox.cs" />
+    <Compile Include="Views\Clipboard.cs" />
+    <Compile Include="Views\ComboBox.cs" />
+    <Compile Include="Views\DateField.cs" />
+    <Compile Include="Views\FrameView.cs" />
+    <Compile Include="Views\HexView.cs" />
+    <Compile Include="Views\Label.cs" />
+    <Compile Include="Views\ListView.cs" />
+    <Compile Include="Views\Menu.cs" />
+    <Compile Include="Views\ProgressBar.cs" />
+    <Compile Include="Views\RadioGroup.cs" />
+    <Compile Include="Views\ScrollView.cs" />
+    <Compile Include="Views\StatusBar.cs" />
+    <Compile Include="Views\TextField.cs" />
+    <Compile Include="Views\TextView.cs" />
+    <Compile Include="Views\TimeField.cs" />
+    <Compile Include="Windows\Dialog.cs" />
+    <Compile Include="Windows\FileDialog.cs" />
+    <Compile Include="Windows\MessageBox.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Content Include="ConsoleDrivers\CursesDriver\README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Intellivoid.NStack">
+      <HintPath>..\NStack\bin\Release\Intellivoid.NStack.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ValueTuple, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\NStack\bin\Release\System.ValueTuple.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

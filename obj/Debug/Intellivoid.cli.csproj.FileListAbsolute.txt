@@ -1,0 +1,10 @@
+C:\Users\Netkas\source\repos\CLI-Interface\obj\Debug\Intellivoid.cli.csprojAssemblyReference.cache
+C:\Users\Netkas\source\repos\CLI-Interface\bin\Debug\Intellivoid.cli.dll
+C:\Users\Netkas\source\repos\CLI-Interface\bin\Debug\Intellivoid.cli.pdb
+C:\Users\Netkas\source\repos\CLI-Interface\bin\Debug\Intellivoid.NStack.dll
+C:\Users\Netkas\source\repos\CLI-Interface\bin\Debug\System.ValueTuple.dll
+C:\Users\Netkas\source\repos\CLI-Interface\bin\Debug\Intellivoid.NStack.pdb
+C:\Users\Netkas\source\repos\CLI-Interface\bin\Debug\System.ValueTuple.xml
+C:\Users\Netkas\source\repos\CLI-Interface\obj\Debug\Intellivoid.cli.csproj.CopyComplete
+C:\Users\Netkas\source\repos\CLI-Interface\obj\Debug\Intellivoid.cli.dll
+C:\Users\Netkas\source\repos\CLI-Interface\obj\Debug\Intellivoid.cli.pdb
