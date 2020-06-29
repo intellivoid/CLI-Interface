@@ -5,12 +5,12 @@ using System.Runtime.InteropServices;
 // General Information about an assembly is controlled through the following
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
-[assembly: AssemblyTitle("CLI-Interface")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyTitle("CLI Interface")]
+[assembly: AssemblyDescription("A library for rendering a CLI")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("CLI-Interface")]
-[assembly: AssemblyCopyright("Copyright ©  2020")]
+[assembly: AssemblyCompany("Intellivoid Technologies")]
+[assembly: AssemblyProduct("Intellivoid.cli")]
+[assembly: AssemblyCopyright("Copyright © Intellivoid Technologies 2017-2020")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
